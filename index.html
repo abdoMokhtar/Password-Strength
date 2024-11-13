@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Test Your Password</h1>
+    <div class="container">
+      <input type="text" placeholder="Type Your Password" id="filed" />
+      <i class="fa-solid fa-eye"></i>
+      <p class="text-level">Your Password Is <span>Weak</span></p>
+      <div class="level">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li>
+          <i class="fa-solid fa-circle"></i>
+          <span>Least 10 Characters</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle"></i>
+          <span>Upper & lower case letter</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle"></i>
+          <span>Number</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle"></i>
+          <span> A symbol (#$&)</span>
+        </li>
+      </ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

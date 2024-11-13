@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  background: url(image/medium.svg) no-repeat center center;
+
+  background-size: cover;
+  color: #fff;
+  display: grid;
+  place-content: center;
+}
+.container {
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  padding: 15px 20px;
+  margin-top: 40px;
+  border-radius: 40px 40px 100px 40px;
+  box-shadow: 0px 5px 20px 5px #000000;
+  background-color: rgb(43 42 42 / 50%);
+}
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container input {
+  font-family: "Nunito", sans-serif;
+  width: 86%;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 13px 0 13px 13px;
+  margin-top: 10px;
+  border-radius: 10px 0 0 10px;
+  z-index: 3;
+}
+
+.container input::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: rgb(82, 82, 82);
+  font-family: "Nunito", sans-serif;
+}
+.container input + i {
+  color: rgb(35, 39, 41);
+  cursor: pointer;
+  position: absolute;
+  right: 18px;
+  top: 25px;
+  padding: 17px;
+  background: white;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Level Password Strength Section  */
+
+.text-level {
+  text-align: center;
+  display: none;
+  font-size: 18px;
+}
+
+.level span {
+  position: relative;
+  display: inline-block;
+  width: calc((100% - 15px) / 4);
+  height: 6px;
+  background-color: gray;
+  border-radius: 3px;
+}
+
+.level span:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 3px;
+  transition: 0.4s width ease-in;
+}
+
+.level span.show::before {
+  width: 100%;
+}
+.level span:nth-child(1):before {
+  background-color: #d63737;
+}
+.level span:nth-child(2):before {
+  background-color: #f79133;
+}
+.level span:nth-child(3):before {
+  background-color: #048aff;
+}
+.level span:nth-child(4):before {
+  background-color: #25c25a;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  letter-spacing: 0.7px;
+  word-spacing: 3px;
+}
+
+ul li {
+  padding: 10px;
+}
+
+.container ul li i {
+  color: white;
+  margin-right: 5px;
+  font-size: 10px;
+}
+.container ul li span {
+  color: #65ff66;
+  font-weight: bold;
+  font-size: 18px;
+}
+.fa-check {
+  font-size: 15px !important;
+}
+.check {
+  text-decoration: line-through rgb(219, 218, 218);
+  color: rgb(255, 255, 255) !important;
+}
